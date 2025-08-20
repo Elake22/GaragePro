@@ -43,27 +43,27 @@ Built with Spring Boot + JPA (MySQL) on the back end and React (Vite) + Bootstra
 
 2. Book an Appointment
 
-   Fill out contact and vehicle information.
+   - Fill out contact and vehicle information.
 
-   Select one or more services.
+   - Select one or more services.
 
-   Choose a mechanic.
+   - Choose a mechanic.
 
-   Pick a date and select Morning or Afternoon.
+   - Pick a date and select Morning or Afternoon.
 
-   Submit the form.
+   - Submit the form.
 
 3. Confirmation
 
-   A friendly summary shows selected services, time, and the estimated total.
+    - A friendly summary shows selected services, time, and the estimated total.
 
 4. Advisor Dashboard
 
-   Navigate to /advisor/appointments.
+   - Navigate to /advisor/appointments.
 
-   Browse all bookings.
+   - Browse all bookings.
 
-   Filter by status or search by name, email, phone, vehicle, or service.
+   - Filter by status or search by name, email, phone, vehicle, or service.
 
 
 
