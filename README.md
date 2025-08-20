@@ -16,8 +16,8 @@ Built with Spring Boot + JPA (MySQL) on the back end and React (Vite) + Bootstra
 - **Advisor Dashboard**:
   - View, filter, and search appointments by status, name, email, phone, vehicle, or service.
 - **Polished UI**:
-  - Responsive design with emoji icons.
-  - Mechanic avatars featuring specialties, years of experience, and ratings.
+  - Responsive design
+  - Mechanic cards featuring specialties, years of experience, and ratings.
 - **Clean API**:
   - Spring Boot RESTful backend.
   - Global exception handler returns clear, helpful JSON error messages.
