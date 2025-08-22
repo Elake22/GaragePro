@@ -36,10 +36,33 @@ Built with Spring Boot + JPA (MySQL) on the back end and React (Vite) + Bootstra
 
 - Custom CSS theme (Ferrari Red + Racing Yellow accents)
 
+## 🛠️ Database Setup (MySQL)
+1. Install MySQL 8
+2. Set Default port: 3306
+3. Make sure MySQL 8 is installed and running.
+4. Run Table creation .sql
+5. Run Service_MechInsert.sql
+6. Run Specality set.sql
+
+## ▶️ Start the Application
+
+📦 Backend (Spring Boot + MySQL)
+
+Ensure the Database is Running
+Make sure MySQL is up and the garagepro database is created and configured (see Database Setup).
+
+Start the Spring Boot App -  ./mvnw spring-boot:run
+
+🎨 Frontend (React + Vite)
+
+Install Dependencies - npm install
+
+Start the Development Server - npm run dev
+
 
 ## 📚 Usage
 
-1. Access the App
+1. Access the App site - http://localhost:5173/
 
 2. Book an Appointment
 
@@ -57,7 +80,7 @@ Built with Spring Boot + JPA (MySQL) on the back end and React (Vite) + Bootstra
 
     - A friendly summary shows selected services, time, and the estimated total.
 
-4. Advisor Dashboard
+4. Advisor Dashboard - http://localhost:5173/advisor/appointments
 
    - Navigate to /advisor/appointments.
 
