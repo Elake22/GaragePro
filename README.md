@@ -24,13 +24,13 @@ Built with Spring Boot + JPA (MySQL) on the back end and React (Vite) + Bootstra
 
 ## 🧱 Tech Stack
 
--- Backend --
+-- 📦 Backend --
 
 -Java 17+, Spring Boot 3, Spring Web, Spring Data JPA (Hibernate), Hibernate Validator
 
 - MySQL 8 (or compatible), Lombok
 
--- Frontend --
+-- 🎨 Frontend --
 
 - React 18, Vite, React Router, Bootstrap 5
 
@@ -46,14 +46,14 @@ Built with Spring Boot + JPA (MySQL) on the back end and React (Vite) + Bootstra
 
 ## ▶️ Start the Application
 
-📦 Backend (Spring Boot + MySQL)
+-- 📦 Backend (Spring Boot + MySQL) --
 
 Ensure the Database is Running
 Make sure MySQL is up and the garagepro database is created and configured (see Database Setup).
 
 Start the Spring Boot App -  ./mvnw spring-boot:run
 
-🎨 Frontend (React + Vite)
+-- 🎨 Frontend (React + Vite) --
 
 Install Dependencies - npm install
 
