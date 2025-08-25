@@ -1,6 +1,7 @@
 // src/main/java/com/example/demo/controller/BookingController.java
 package com.example.demo.controller;
 
+import com.example.demo.DataTransferObject.UpdateStatusRequest;
 import com.example.demo.model.Booking;
 import com.example.demo.service.BookingService;
 import jakarta.validation.Valid;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:5173") // optional, helps local dev
 @RestController
@@ -57,4 +59,15 @@ public class BookingController {
         boolean deleted = bookingService.deleteBooking(id);
         return deleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
+
+    @PatchMapping("/{id}/status")
+    public ResponseEntity<Void> updateStatus(
+            @PathVariable int id,
+            @RequestBody @Valid UpdateStatusRequest body
+    ) {
+        Booking updated = bookingService.updateStatus(id, body.getStatus());
+        return (updated == null) ? ResponseEntity.notFound().build()
+                : ResponseEntity.noContent().build();
+    }
 }
+
